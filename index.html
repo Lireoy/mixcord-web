@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mixcord</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+<nav class="navbar navbar-expand-md mixcord-background navbar-mixcord fixed-top">
+    <!-- Navbar Brand -->
+    <a class="navbar-brand" href="#landing">
+    </a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div id="collapsibleNavbar" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item side-padding-1em">
+                <a class="nav-link" href="#landing">Home</a>
+            </li>
+            <li class="nav-item side-padding-1em">
+                <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item side-padding-1em">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item side-padding-1em">
+                <a class="nav-link" href="/commands">Commands</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="landing" class="container mixcord-background">
+    <div id="titles" class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <h1>Mixcord</h1>
+            <h3>Fast and simple Mixer announcements for your Discord server.</h3>
+        </div>
+    </div>
+    <div id="buttons" class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <a class="btn btn-light btn-lg btn-block"
+               href="https://discordapp.com/oauth2/authorize?client_id=551114019327574026&permissions=347200&scope=bot"
+               target="_blank">
+                Invite
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a class="btn btn-light btn-lg btn-block disabled">
+                <span><del>Dashboard</del></span><br><span>Coming Soon</span>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a class="btn btn-light btn-lg btn-block" href="https://discord.gg/PXU46xR"
+               target="_blank">
+                Support
+            </a>
+        </div>
+    </div>
+</div>
+<div id="v-shape" class="mixcord-background"></div>
+<div id="features" class="container">
+    <div class="row">
+        <div id="commands-title" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <h2>Features</h2>
+            <h3>
+                Mixcord makes it easy to keep up with your favorite Mixer streamers.
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div id="notif-text" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-container">
+            <p>
+                Get a message in your Discord server when your favorite streamers go live. You can change the
+                notification's appearance to what fits your server best.
+            </p>
+        </div>
+        <div id="notif-img" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 img-container">
+            <img src="img/notification.png" title="Notification" alt="Notification">
+        </div>
+    </div>
+    <div class="row">
+        <div id="addnotif-text"
+             class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-container">
+            <p>
+                Quickly add, manage, and remove notifications set up for your server with simple commands.
+            </p>
+        </div>
+        <div id="addnotif-img" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 img-container">
+            <img src="img/addnotif.png" title="Add a notification" alt="Add a notification">
+        </div>
+    </div>
+    <div class="row">
+        <div id="mixeruser-text"
+             class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-container">
+            <p>
+                Curious about a streamer? Check their current status without opening the browser. If they are live,
+                you can check what game they are playing, how many viewers they have, the language of the
+                stream and whether their content is suitable for your taste.
+            </p>
+        </div>
+        <div id="mixeruser-img" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 img-container">
+            <img src="img/mixeruser.png" title="User info" alt="User info">
+        </div>
+    </div>
+    <div id="teasing-section" class="row">
+        <div id="teasing-text" class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+            <h1>Get lazy with Mixcord</h1>
+            <h5>You won't have to check Mixer again and again too see if someone is streaming or not, get comfortable and click just once!</h5>
+        </div>
+        <div id="teasing-button" class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 img-container">
+            <a class="btn btn-light btn-lg btn-block"
+               href="https://discordapp.com/oauth2/authorize?client_id=551114019327574026&permissions=347200&scope=bot"
+               target="_blank">
+                Add to Discord
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+<footer id="about" class="container">
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-container">
+            Mixcord
+            Copyright © Lireoy 2020.
+            Mixcord is not operated by or affiliated with Microsoft, Inc. or Mixer.
+            Questions, comments, or business inquiries? Contact me via Mixcord's
+            <a href="https://discord.gg/PXU46xR" target="_blank">Discord server</a>.
+        </div>
+    </div>
+</footer>
+</html>

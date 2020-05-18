@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mixcord</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+<nav class="navbar navbar-expand-md mixcord-background navbar-mixcord fixed-top">
+    <!-- Navbar Brand -->
+    <a class="navbar-brand" href="#landing">
+    </a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div id="collapsibleNavbar" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item side-padding-1em">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item side-padding-1em">
+                <a class="nav-link" href="/#features">Features</a>
+            </li>
+            <li class="nav-item side-padding-1em">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item side-padding-1em">
+                <a class="nav-link" href="#commands">Commands</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="landing" class="container mixcord-background">
+    <div id="titles" class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <h1>Mixcord Command Reference</h1>
+            <h3>Complete list of commands and their requirements.</h3>
+        </div>
+    </div>
+    <div id="buttons" class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a class="btn btn-light btn-lg btn-block" href="https://discord.gg/PXU46xR"
+               target="_blank">
+                Support Server
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+        </div>
+    </div>
+</div>
+<div id="v-shape" class="mixcord-background"></div>
+
+<div id="commands" class="container">
+    <div class="row">
+        <div id="commands-title" class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12">
+            <h2>Commands</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12 command">
+            <h3>Informative</h3>
+            <div class="command-margin">
+                <h4>.Info</h4>
+                <p class="secondary-text">Shows information about the bot.</p>
+                <h5 class="deleted-text secondary-text indent">Aliases</h5>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                </ul>
+                <span class="deleted-text secondary-text indent">Required user permissions:</span>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.Invite</h4>
+                <p class="secondary-text">Provides an invite link so you can add this bot to your server.</p>
+                <h5 class="secondary-text indent">Aliases</h5>
+                <ul>
+                    <li class="secondary-text">Inv</li>
+                    <li class="secondary-text">GetOverHere</li>
+                </ul>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                    <li class="secondary-text">Add Reactions</li>
+                </ul>
+                <span class="deleted-text secondary-text indent">Required user permissions:</span>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.Ping</h4>
+                <p class="secondary-text">Shows the current latency of the bot.</p>
+                <h5 class="secondary-text indent">Aliases</h5>
+                <ul>
+                    <li class="secondary-text">Pong</li>
+                    <li class="secondary-text">Latency</li>
+                    <li class="secondary-text">Pingpong</li>
+                </ul>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                </ul>
+                <span class="deleted-text secondary-text indent">Required user permissions:</span>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.WhoCanUseMe</h4>
+                <p class="secondary-text">Displays those roles which can use Mixcord.</p>
+                <h5 class="deleted-text secondary-text indent">Aliases</h5>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                    <li class="secondary-text">Add Reactions</li>
+                </ul>
+                <span class="deleted-text secondary-text indent">Required user permissions:</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12 command">
+            <h3>Mixer</h3>
+            <div class="command-margin">
+                <h4>.MixerUser &lt;streamer name&gt;</h4>
+                <p class="secondary-text">Displays a Mixer user's data.</p>
+                <h5 class="deleted-text secondary-text indent">Aliases</h5>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                    <li class="secondary-text">Embed Links</li>
+                    <li class="secondary-text">Add Reactions</li>
+                </ul>
+                <span class="deleted-text secondary-text indent">Required user permissions:</span>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.MixerUserSocials &lt;streamer name&gt;</h4>
+                <p class="secondary-text">Displays a Mixer user's social profiles..</p>
+                <h5 class="deleted-text secondary-text indent">Aliases</h5>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                    <li class="secondary-text">Embed Links</li>
+                    <li class="secondary-text">Add Reactions</li>
+                </ul>
+                <span class="deleted-text secondary-text indent">Required user permissions:</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12 command">
+            <div class="command-margin">
+                <h4>.AddNotif &lt;streamer name&gt;</h4>
+                <p class="secondary-text">Creates a new notification for a Mixer streamer in the channel where the
+                    command is used.</p>
+                <h5 class="secondary-text indent">Aliases</h5>
+                <ul>
+                    <li class="secondary-text">CreateNotif</li>
+                </ul>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                    <li class="secondary-text">Add Reactions</li>
+                </ul>
+                <span class="secondary-text indent">Required user permissions:</span>
+                <ul>
+                    <li class="secondary-text">Manage Server</li>
+                </ul>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.DeleteNotif &lt;streamer name&gt;</h4>
+                <p class="secondary-text">Deletes a streamer notification in the channel where the command is used.</p>
+                <h5 class="secondary-text indent">Aliases</h5>
+                <ul>
+                    <li class="secondary-text">DelNotif</li>
+                    <li class="secondary-text">RemoveNotif</li>
+                </ul>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                    <li class="secondary-text">Add Reactions</li>
+                </ul>
+                <span class="secondary-text indent">Required user permissions:</span>
+                <ul>
+                    <li class="secondary-text">Manage Server</li>
+                </ul>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.ChannelNotifs</h4>
+                <p class="secondary-text">Lists all available notifications for this channel.</p>
+                <h5 class="secondary-text indent">Aliases</h5>
+                <ul>
+                    <li class="secondary-text">ListNotifs</li>
+                    <li class="secondary-text">ListNotifications</li>
+                </ul>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                </ul>
+                <span class="secondary-text indent">Required user permissions:</span>
+                <ul>
+                    <li class="secondary-text">Manage Server</li>
+                </ul>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.ServerNotifs</h4>
+                <p class="secondary-text">Lists all available notifications for this server.</p>
+                <h5 class="secondary-text indent">Aliases</h5>
+                <ul>
+                    <li class="secondary-text">ListAllNotifs</li>
+                    <li class="secondary-text">ListAllNotifications</li>
+                </ul>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                </ul>
+                <span class="secondary-text indent">Required user permissions:</span>
+                <ul>
+                    <li class="secondary-text">Manage Server</li>
+                </ul>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.NotifPreview</h4>
+                <p class="secondary-text">Sends a preview for a notification.</p>
+                <h5 class="secondary-text indent">Aliases</h5>
+                <ul>
+                    <li class="secondary-text">Preview</li>
+                    <li class="secondary-text">NotificationPreview</li>
+                </ul>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                    <li class="secondary-text">Add Reactions</li>
+                </ul>
+                <span class="secondary-text indent">Required user permissions:</span>
+                <ul>
+                    <li class="secondary-text">Manage Server</li>
+                </ul>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.NotifDetails</h4>
+                <p class="secondary-text">Lists all settings for a notifications.</p>
+                <h5 class="deleted-text secondary-text indent">Aliases</h5>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                </ul>
+                <span class="secondary-text indent">Required user permissions:</span>
+                <ul>
+                    <li class="secondary-text">Manage Server</li>
+                </ul>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.MakeDefault</h4>
+                <p class="secondary-text">Resets a notification's configuration to the defaults.</p>
+                <h5 class="deleted-text secondary-text indent">Aliases</h5>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                    <li class="secondary-text">Add Reactions</li>
+                </ul>
+                <span class="secondary-text indent">Required user permissions:</span>
+                <ul>
+                    <li class="secondary-text">Manage Server</li>
+                </ul>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.NotifMessageEdit &lt;streamer name&gt;, &lt;new message&gt;</h4>
+                <p class="secondary-text">Edits the notification's message.</p>
+                <h5 class="secondary-text indent">Aliases</h5>
+                <ul>
+                    <li class="secondary-text">EditMessage</li>
+                    <li class="secondary-text">MessageEdit</li>
+                </ul>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                    <li class="secondary-text">Add Reactions</li>
+                </ul>
+                <span class="secondary-text indent">Required user permissions:</span>
+                <ul>
+                    <li class="secondary-text">Manage Server</li>
+                </ul>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.NotifColorEdit &lt;streamer name&gt;, &lt;new hex color code&gt;</h4>
+                <p class="secondary-text">Edits the notification's embed color.</p>
+                <h5 class="secondary-text indent">Aliases</h5>
+                <ul>
+                    <li class="secondary-text">Color</li>
+                    <li class="secondary-text">ColorEdit</li>
+                    <li class="secondary-text">EditColor</li>
+                </ul>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                    <li class="secondary-text">Add Reactions</li>
+                </ul>
+                <span class="secondary-text indent">Required user permissions:</span>
+                <ul>
+                    <li class="secondary-text">Manage Server</li>
+                </ul>
+            </div>
+            <hr class="command-separator">
+            <div class="command-margin">
+                <h4>.NotifEmbedConfig &lt;streamer name&gt;, &lt;true | false&gt;</h4>
+                <p class="secondary-text">Edits the notification format. Set it to true for embed, false for non-embed
+                    notification.</p>
+                <h5 class="deleted-text secondary-text indent">Aliases</h5>
+                <h5 class="secondary-text indent">Required bot permissions</h5>
+                <ul>
+                    <li class="secondary-text">Read Messages</li>
+                    <li class="secondary-text">Send Messages</li>
+                </ul>
+                <span class="secondary-text indent">Required user permissions:</span>
+                <ul>
+                    <li class="secondary-text">Manage Server</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<footer id="about" class="container">
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-container">
+            Mixcord
+            Copyright © Lireoy 2020.
+            Mixcord is not operated by or affiliated with Microsoft, Inc. or Mixer.
+            Questions, comments, or business inquiries? Contact me via Mixcord's
+            <a href="https://discord.gg/PXU46xR" target="_blank">Discord server</a>.
+        </div>
+    </div>
+</footer>
+</html>
