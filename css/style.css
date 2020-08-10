@@ -10,6 +10,10 @@
     background-color: #0270d9 !important;
 }
 
+.modal-text-color {
+    color: black;
+}
+
 body {
     background-color: black;
     color: white;

@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
 <nav class="navbar navbar-expand-md mixcord-background navbar-mixcord fixed-top">
@@ -41,6 +42,23 @@
     </div>
 </nav>
 <div id="landing" class="container mixcord-background">
+    <div class="modal hide fade" id="welcome-modal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-text-color">
+                <div class="modal-header">
+                    <h4 class="modal-title">Mixcord is now History</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    Since Microsoft decided to shut down it's streaming service <strong>Mixer</strong>,
+                    this project is no longer being developed.<br><br>This site is in an archived state.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="titles" class="row">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h1>Mixcord</h1>
